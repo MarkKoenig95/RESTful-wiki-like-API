@@ -11,19 +11,21 @@
 # API Endpoints
 
  ## /articles
+ 
  **GET**: Get all articles that have been published to the database
- <br>
+ 
  **POST**: Post one new article to the database
- - Use the fields "title" and "content" in the body of the request
- <br>
+ 
+* Note: Use the fields "title" and "content" in the body of the request
+   
  **DELETE**: Delete all articles in the database
  
  ## /articles/{Article Title}
+ 
  **GET**: Get the article from the database matching the Article Title parameter
- <br>
+ 
  **PUT**: Overwrite specified article matching the Article Title parameter with the content of the body of the request
- <br>
+ 
  **PATCH**: Overwrite either the "title", "content" or both fields of the article matching the Article Title parameter
- <br>
+ 
  **DELETE**: Delete the article matching the Article Title parameter
- <br>
